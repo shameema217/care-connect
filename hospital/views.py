@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect,reverse, get_object_or_404
 from . import forms,models
 from django.db.models import Sum
-from django.contrib.auth.models import Group
+from django.contrib.auth.models import Group,User
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required,user_passes_test
@@ -12,6 +12,7 @@ from .models import ConsultationLink, Patient
 from .models import Prescription, Patient
 from .forms import PrescriptionForm
 from django.contrib import messages
+from django.contrib.auth import login
 
 
 
