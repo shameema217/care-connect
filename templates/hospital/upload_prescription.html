@@ -13,12 +13,12 @@
 
     <style>
         body {
-            background: linear-gradient(to right, #39b6c9, #5ad9d7);
+            background: linear-gradient(to right, #f9f8f8, #f8fafa);
             padding-top: 0px;
         }
 
         .container {
-            background-color: #fff;
+            /* background-color: #3aa3ae; */
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -62,8 +62,11 @@
 </head>
 <br><br><br>
 <body>
+    <div class="container" style="background-color: #3aa3ae;">
+        <h2 >Upload Prescription</h2>
+
+    </div>
     <div class="container">
-        <h2>Upload Prescription</h2>
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="form-group">

@@ -517,3 +517,14 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+.chatbot{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(244, 226, 36);
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
