@@ -131,7 +131,7 @@
 
     #check:checked~.sidebar a {
       font-size: 20px;
-      margin-left: 170px;
+      margin-left: 140px;
       width: 80px;
     }
 
@@ -193,18 +193,19 @@
       <h6 style="color: rgb(255, 255, 255);">(Doctor)</h6>
     </center>
     <ul>
-      <li tabindex="0" class="icon-dashboard"> <a style="color:white; text-decoration:none;" href="/doctor-dashboard"><span>Dashboard</span></a> </li>
-      <li tabindex="0" class="icon-users"> <a style="color:white; text-decoration:none;" href="/doctor-patient"><span>Patient</span></a></li>
-      <li tabindex="0" class="icon-users"> <a style="color:white; text-decoration:none;" href="/upload-consultation-link/"><span>Consultation</span></a></li>
-      <li tabindex="0" class="icon-calendar"> <a style="color:white; text-decoration:none;" href="/doctor-appointment"><span>Appointments</span></a></li>
-      <li tabindex="0" class="icon-calendar"> <a style="color:white; text-decoration:none;" href="/upload_prescription"><span>Upload</span></a></li>
+      <a href="/doctor-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+      <a href="/doctor-patient"><i class="fas fa-question-circle"></i><span>Patients</span></a>
+      <a href="/doctor-consultation"><i class="fas fa-user-md"></i><span>Consultation</span> </a>
+      <a href="/doctor-appointment"><i class="fas fa-chalkboard-teacher"></i><span>Appointments</span></a>
+      <a href="/upload-reports"> <i class="fas fa-upload"></i><span>Upload</span></a>
 
       <form id="logout_form" action="/logout" method="POST" style="display: inline;">
         {% csrf_token %}
         <a href="#" class="logout_link" onclick="document.getElementById('logout_form').submit(); return false;">
+            <i class="fas fa-sign-out-alt"></i>
             <span>Logout</span>
         </a>
-      </form>
+    </form>
     </ul>
   </div>
 
